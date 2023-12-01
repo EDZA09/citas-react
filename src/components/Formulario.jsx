@@ -76,6 +76,12 @@ const Formulario = () => {
             className="border-2 w-full p-2 mt-2 placeholder-gray-400"
           />
         </div>
+
+        <input
+          type="submit"
+          value="Agregar Paciente"
+          className="bg-indigo-600 w-full p-3 uppercase text-white font-bold hover:bg-indigo-700 cursor-pointer transition-all"
+        />
       </form>
     </div>
   );
