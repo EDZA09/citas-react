@@ -1,6 +1,14 @@
 import { useState, useEffect } from "react";
 
 const Formulario = () => {
+  const [nombre, setNombre] = useState(""); //*Manera correcta
+  //let [nombre, setNombre] = useState(""); //!Manera Incorrecta
+
+  //nombre = "Hola Mundo"; //!Manera Incorrecta
+  setNombre("Hook"); //*Manera correcta
+
+  console.log(nombre);
+
   return (
     <div className="md:w-1/2 lg:w-2/5">
       <h2 className="font-black text-3xl text-center">Seguimiento Pacientes</h2>

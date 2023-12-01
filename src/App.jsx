@@ -9,7 +9,7 @@ import ListadoPacientes from "./components/ListadoPacientes";
 
 function App() {
   //const [count, setCount] = useState(0);
-  const sumar = () => {
+  /*const sumar = () => {
     //console.log(2 + 2);
     const numero = 5;
 
@@ -20,7 +20,7 @@ function App() {
     }
   };
 
-  sumar();
+  sumar();*/
 
   //const edad = 18;
 
