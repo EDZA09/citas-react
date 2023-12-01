@@ -2,21 +2,6 @@ import { useState, useEffect } from "react";
 
 const Formulario = () => {
   const [nombre, setNombre] = useState(""); //*Manera correcta
-  //let [nombre, setNombre] = useState(""); //!Manera Incorrecta
-
-  //setNombre("Hook"); //*Manera correcta
-  //nombre = "Hola Mundo"; //!Manera Incorrecta
-  /* //!Incumplendo reglas, en condicionales
-  const admin = false;
-  if (admin) {
-    const [puedeVer, setPuedeVer] = useState(true);
-  }*/
-
-  /* //!IncumpliendoReglas, en Retornos
-  const cargando = true;
-  if (cargando) return;
-
-  const { estaVisible, setEstaVisible } = useState(true);*/
 
   return (
     <div className="md:w-1/2 lg:w-2/5">
