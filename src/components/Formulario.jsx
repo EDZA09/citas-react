@@ -55,7 +55,7 @@ const Formulario = () => {
             htmlFor="alta"
             className="block text-gray-700 uppercase font-bold"
           >
-            Fecha de Alta
+            Alta
           </label>
           <input
             type="date"
@@ -68,7 +68,7 @@ const Formulario = () => {
             htmlFor="alta"
             className="block text-gray-700 uppercase font-bold"
           >
-            Sintomas
+            S&iacute;ntomas
           </label>
           <textarea
             id="sintomas"
