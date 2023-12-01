@@ -8,7 +8,7 @@ const Formulario = () => {
       </p>
 
       <form className="bg-white shadow-md rounded-lg py-10 px-5 mb-10">
-        <div className="">
+        <div className="mb-5">
           <label
             htmlFor="mascota"
             className="block text-gray-700 uppercase font-bold"
