@@ -7,8 +7,8 @@ const Formulario = () => {
         <span className="text-indigo-600 font-bold">Administralos</span>
       </p>
 
-      <form className="bg-white shadow-md rounded-lg py-10 px-5">
-        <div>
+      <form className="bg-white shadow-md rounded-lg py-10 px-5 mb-10">
+        <div className="">
           <label
             htmlFor="mascota"
             className="block text-gray-700 uppercase font-bold"
@@ -17,9 +17,22 @@ const Formulario = () => {
           </label>
           <input
             type="text"
-            name="nombre"
             id="mascota"
             placeholder="Nombre de la Mascota"
+            className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
+          />
+        </div>
+        <div className="mb-5">
+          <label
+            htmlFor="propietario"
+            className="block text-gray-700 uppercase font-bold"
+          >
+            Nombre Propietario
+          </label>
+          <input
+            type="text"
+            id="propietario"
+            placeholder="Nombre del Propietario"
             className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
           />
         </div>
