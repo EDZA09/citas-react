@@ -36,6 +36,20 @@ const Formulario = () => {
             className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
           />
         </div>
+        <div className="mb-5">
+          <label
+            htmlFor="email"
+            className="block text-gray-700 uppercase font-bold"
+          >
+            Email
+          </label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Email Contacto Propietario"
+            className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
+          />
+        </div>
       </form>
     </div>
   );
