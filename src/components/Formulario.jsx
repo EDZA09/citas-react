@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const Formulario = () => {
+const Formulario = ({ setPaciente }) => {
   const [nombre, setNombre] = useState(""); //*Manera correcta
   const [propietario, setPropietario] = useState(""); //*Manera correcta
   const [email, setEmail] = useState(""); //*Manera correcta
@@ -21,6 +21,7 @@ const Formulario = () => {
     } else {
       setError(false);
       console.log("Todos llenos");
+      setPaciente(nombre);
     }
   };
 
