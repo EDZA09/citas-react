@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const Formulario = ({ setPacientes }) => {
+const Formulario = ({ pacientes, setPacientes }) => {
   const [nombre, setNombre] = useState(""); //*Manera correcta
   const [propietario, setPropietario] = useState(""); //*Manera correcta
   const [email, setEmail] = useState(""); //*Manera correcta
