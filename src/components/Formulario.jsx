@@ -33,8 +33,7 @@ const Formulario = ({ pacientes, setPacientes }) => {
       sintomas,
     };
 
-    //!Forma Incorrecta
-    setPacientes(objetoPaciente);
+    setPacientes([...pacientes, objetoPaciente]);
   };
 
   return (
