@@ -19,6 +19,7 @@ const Formulario = () => {
 
       setError(true);
     } else {
+      setError(false);
       console.log("Todos llenos");
     }
   };
