@@ -18,11 +18,11 @@ const Formulario = ({ setPaciente }) => {
       console.log("Hay al menos un campo vacío");
 
       setError(true);
-    } else {
-      setError(false);
-      console.log("Todos llenos");
-      setPaciente(nombre);
+      return;
     }
+    setError(false);
+    console.log("Todos llenos");
+    setPaciente(nombre);
   };
 
   return (
