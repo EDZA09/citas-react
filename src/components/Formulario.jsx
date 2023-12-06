@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const Formulario = ({ setPaciente }) => {
+const Formulario = ({ setPacientes }) => {
   const [nombre, setNombre] = useState(""); //*Manera correcta
   const [propietario, setPropietario] = useState(""); //*Manera correcta
   const [email, setEmail] = useState(""); //*Manera correcta
@@ -22,7 +22,19 @@ const Formulario = ({ setPaciente }) => {
     }
     setError(false);
     console.log("Todos llenos");
-    setPaciente(nombre);
+
+    //!Forma Incorrecta
+    // objeto de Paciente
+    const objetoPaciente = {
+      nombre,
+      propietario,
+      email,
+      fecha,
+      sintomas,
+    };
+
+    //!Forma Incorrecta
+    setPacientes(objetoPaciente);
   };
 
   return (
