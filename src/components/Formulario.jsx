@@ -7,6 +7,8 @@ const Formulario = () => {
   const [fecha, setFecha] = useState(""); //*Manera correcta
   const [sintomas, setSintomas] = useState(""); //*Manera correcta
 
+  const [error, setError] = useState(false);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Enviando Formulario");
@@ -14,6 +16,8 @@ const Formulario = () => {
     //*Validación del formulario
     if ([nombre, propietario, email, fecha, sintomas].includes("")) {
       console.log("Hay al menos un campo vacío");
+
+      setError(true);
     } else {
       console.log("Todos llenos");
     }
