@@ -2,6 +2,7 @@
 /*import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";*/
+import { useState } from "react";
 import Formulario from "./components/Formulario";
 import Header from "./components/Header";
 Formulario;
@@ -9,7 +10,7 @@ import ListadoPacientes from "./components/ListadoPacientes";
 
 function App() {
   //const [count, setCount] = useState(0);
-  /*const sumar = () => {
+  const sumar = () => {
     //console.log(2 + 2);
     const numero = 5;
 
@@ -20,13 +21,14 @@ function App() {
     }
   };
 
-  sumar();*/
+  //sumar();*/
 
   //const edad = 18;
+  const [pacientes, setPacientes] = useState([]);
 
   return (
     <div className="container mx-auto mt-20">
-      <Header />
+      <Header numeros={1} isAdmin={false} fn={sumar} />
       <div className="mt-12 md:flex">
         <Formulario />
         <ListadoPacientes />
