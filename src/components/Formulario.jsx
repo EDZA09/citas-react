@@ -35,6 +35,11 @@ const Formulario = () => {
         onSubmit={handleSubmit}
         className="bg-white shadow-md rounded-lg py-10 px-5 mb-10"
       >
+        {error && (
+          <div className="bg-red-800 text-white text-center p-3 uppercase font-bold mb-5 rounded-md">
+            <p>Todos los Campos son Obligatorios</p>
+          </div>
+        )}
         <div className="mb-5">
           <label
             htmlFor="mascota"
