@@ -23,7 +23,6 @@ const Formulario = ({ pacientes, setPacientes }) => {
     setError(false);
     console.log("Todos llenos");
 
-    //!Forma Incorrecta
     // objeto de Paciente
     const objetoPaciente = {
       nombre,
@@ -33,8 +32,8 @@ const Formulario = ({ pacientes, setPacientes }) => {
       sintomas,
     };
 
+    //*Forma Correcta - Inmutabilidad de variables de estado
     setPacientes([...pacientes, objetoPaciente]);
-  };
 
   return (
     <div className="md:w-1/2 lg:w-2/5 mx-5">
