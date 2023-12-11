@@ -1,33 +1,27 @@
 export const Paciente = ({ paciente }) => {
-  console.log(paciente);
+  //console.log(paciente);
+  const { nombre, propietario, email, fecha, sintomas } = paciente;
   return (
     <div className="mx-5 my-10 bg-white shadow-md px-5 py-10 rounded-xl">
       <p className="font-bold mb-3 text-gray-700 uppercase">
         Nombre: {""}
-        <span className="font-normal normal-case">Hook</span>
+        <span className="font-normal normal-case">{nombre}</span>
       </p>
       <p className="font-bold mb-3 text-gray-700 uppercase">
         Propietario: {""}
-        <span className="font-normal normal-case">Eduar</span>
+        <span className="font-normal normal-case">{propietario}</span>
       </p>
       <p className="font-bold mb-3 text-gray-700 uppercase">
         Email: {""}
-        <span className="font-normal normal-case">
-          eduarstiven2001@gmail.com
-        </span>
+        <span className="font-normal normal-case">{email}</span>
       </p>
       <p className="font-bold mb-3 text-gray-700 uppercase">
         Fecha de Alta: {""}
-        <span className="font-normal normal-case">10 Diciembre de 2022</span>
+        <span className="font-normal normal-case">{fecha}</span>
       </p>
       <p className="font-bold mb-3 text-gray-700 uppercase">
         S&iacute;ntomas: {""}
-        <span className="font-normal normal-case">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
-          itaque aperiam voluptas illum et. Amet at est doloremque ratione ad
-          minus laboriosam expedita laudantium id dignissimos. Itaque et saepe
-          ducimus!
-        </span>
+        <span className="font-normal normal-case">{sintomas}</span>
       </p>
     </div>
   );
