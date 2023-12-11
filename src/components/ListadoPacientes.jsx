@@ -11,7 +11,9 @@ const ListadoPacientes = ({ pacientes }) => {
       </p>
 
       {pacientes.length !== 0 ? (
-        pacientes.map((paciente) => <Paciente paciente={paciente} />)
+        pacientes.map((paciente, index) => (
+          <Paciente key={index} paciente={paciente} />
+        ))
       ) : (
         <div className="bg-yellow-200 text-gray-700 text-center p-3 uppercase font-bold mb-5 rounded-md">
           <p>No hay pacientes aún</p>
