@@ -1,4 +1,4 @@
-export const Paciente = ({ paciente }) => {
+export const Paciente = ({ paciente, setPaciente }) => {
   //console.log(paciente);
   const { nombre, propietario, email, fecha, sintomas } = paciente;
   return (
