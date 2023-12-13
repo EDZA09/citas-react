@@ -10,6 +10,13 @@ const Formulario = ({ pacientes, setPacientes }) => {
 
   const [error, setError] = useState(false);
 
+  const generarId = () => {
+    const random = Math.random().toString(36).substring(2);
+    const fecha = Date.now().toString(36);
+
+    return random + fecha;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Enviando Formulario");
@@ -31,6 +38,7 @@ const Formulario = ({ pacientes, setPacientes }) => {
       email,
       fecha,
       sintomas,
+      id: generarId,
     };
 
     //*Forma Correcta - Inmutabilidad de variables de estado
