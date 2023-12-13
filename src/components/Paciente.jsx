@@ -23,6 +23,10 @@ export const Paciente = ({ paciente }) => {
         S&iacute;ntomas: {""}
         <span className="font-normal normal-case">{sintomas}</span>
       </p>
+
+      <div>
+        <button type="button">Editar</button>
+      </div>
     </div>
   );
 };
