@@ -38,7 +38,7 @@ const Formulario = ({ pacientes, setPacientes }) => {
       email,
       fecha,
       sintomas,
-      id: generarId,
+      id: generarId(),
     };
 
     //*Forma Correcta - Inmutabilidad de variables de estado
