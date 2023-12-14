@@ -4,10 +4,11 @@ import { Paciente } from "./Paciente";
 const ListadoPacientes = ({ pacientes, setPaciente }) => {
   //console.log(pacientes);
   useEffect(() => {
-    if (pacientes && pacientes.length) {
+    if (pacientes.length > 0) {
       console.log("nuevo paciente");
     }
   }, [pacientes]);
+
   return (
     <div className="md:w-1/2 lg:w-3/5 md:h-screen overflow-y-scroll">
       {pacientes && pacientes.length ? (
