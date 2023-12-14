@@ -23,17 +23,17 @@ const Formulario = ({ pacientes, setPacientes, paciente }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Enviando Formulario");
+    //console.log("Enviando Formulario");
 
     //*Validación del formulario
     if ([nombre, propietario, email, fecha, sintomas].includes("")) {
-      console.log("Hay al menos un campo vacío");
+      //console.log("Hay al menos un campo vacío");
 
       setError(true);
       return;
     }
     setError(false);
-    console.log("Todos llenos");
+    //console.log("Todos llenos");
 
     // objeto de Paciente
     const objetoPaciente = {
