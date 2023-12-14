@@ -10,7 +10,9 @@ const Formulario = ({ pacientes, setPacientes, paciente }) => {
 
   const [error, setError] = useState(false);
 
-  console.log(paciente);
+  useEffect(() => {
+    console.log(paciente);
+  }, [paciente]);
 
   const generarId = () => {
     const random = Math.random().toString(36).substring(2);
