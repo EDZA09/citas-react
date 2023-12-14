@@ -1,5 +1,11 @@
+//import { useEffect } from "react";
+
 export const Paciente = ({ paciente, setPaciente }) => {
   //console.log(paciente);
+  /*useEffect(() => {
+    console.log("El componente está listo");
+  }, []);*/
+
   const { nombre, propietario, email, fecha, sintomas } = paciente;
   return (
     <div className="mx-5 my-10 bg-white shadow-md px-5 py-10 rounded-xl">
