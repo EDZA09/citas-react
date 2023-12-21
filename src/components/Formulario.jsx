@@ -48,11 +48,17 @@ const Formulario = ({ pacientes, setPacientes, paciente }) => {
       email,
       fecha,
       sintomas,
-      id: generarId(),
     };
 
-    //*Forma Correcta - Inmutabilidad de variables de estado
-    setPacientes([...pacientes, objetoPaciente]);
+    if (paciente.id) {
+      //? Editando Paciente
+      console.log("Editando");
+    } else {
+      //? Creando Paciente
+      objetoPaciente.id = generarId();
+      //*Forma Correcta - Inmutabilidad de variables de estado
+      setPacientes([...pacientes, objetoPaciente]);
+    }
 
     //?Reiniciar el formulario
     setNombre("");
