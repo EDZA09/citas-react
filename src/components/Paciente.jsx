@@ -7,7 +7,10 @@ export const Paciente = ({ paciente, setPaciente, eliminarPaciente }) => {
   }, []);*/
 
   const handleEliminar = () => {
-    console.log("eliminando ");
+    const respuesta = confirm("Deseas eliminar este paciente?");
+    if (respuesta) {
+      eliminarPaciente(id);
+    }
   };
 
   const { nombre, propietario, email, fecha, sintomas, id } = paciente;
