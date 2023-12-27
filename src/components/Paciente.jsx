@@ -1,6 +1,6 @@
 //import { useEffect } from "react";
 
-export const Paciente = ({ paciente, setPaciente }) => {
+export const Paciente = ({ paciente, setPaciente, eliminarPaciente }) => {
   //console.log(paciente);
   /*useEffect(() => {
     console.log("El componente está listo");
